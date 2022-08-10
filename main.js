@@ -1,0 +1,1 @@
+Vue.createApp({ data: () => ({ btnType: "submit", inputValue: "", tasks: [] }), methods: { addTask() { "" !== this.inputValue && (this.tasks.push({ text: this.inputValue, done: !1 }), this.inputValue = "") }, count() { return this.tasks.filter(a => !a.done).length }, removeNote(a) { this.tasks.splice(a, 1) }, resetTask(a) { this.tasks.splice(a) } } }).mount("#app")

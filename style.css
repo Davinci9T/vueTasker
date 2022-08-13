@@ -26,10 +26,12 @@ input {
 }
 
 img {
-  border-radius: 1rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
   max-width: 100%;
   height: auto;
-  margin-top: 1rem;
+  border-radius: 1rem;
   outline-offset: 5px;
   outline: 1px #fff solid;
 }

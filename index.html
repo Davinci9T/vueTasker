@@ -25,7 +25,7 @@
       <li class="item" :class="{done: task.done}" v-for="(task, i) of tasks"><input type="checkbox" v-model="task.done"><span>{{task.text}}</span><button class="btn delete" @click="removeNote(i)">X</button></li>
       <h2 v-if="tasks.length === 0">задач нет🤷‍♂️<br>добавьте новые ✅</h2>
     </ul>
-    <transition name="fade"><img v-show="count() == 0 && tasks.length != 0" src="https://images.unsplash.com/photo-1533230408708-8f9f91d1235a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1094&q=80" alt=""></transition>
+    <transition name="fade"><img v-show="count() == 0 && tasks.length != 0" src="https://media0.giphy.com/media/GeimqsH0TLDt4tScGw/giphy.gif?cid=ecf05e47gxp7dk7opkqvowxxpjq2ymc4t3cykd8utat4ju50&rid=giphy.gif&ct=g" alt=""></transition>
   </div>
   <script src="main.js"></script>
 </body>

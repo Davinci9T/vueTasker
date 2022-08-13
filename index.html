@@ -15,7 +15,7 @@
     <h1 class="title">список задач</h1>
     <div v-if="count() == 0 && tasks.length != 0">вы большой молодец 🎉🥳</div>
     <div v-else-if="count() == 1">остался последний рывок 😉</div>
-    <div v-else="count() >= 2">осталось сдлеать задач:<span class="counter">{{count()}}</span></div>
+    <div v-else="count() >= 2">осталось сдлеать задач: <span class="counter">{{count()}}</span></div>
     <div class="form">
       <input v-model="inputValue" @keypress.enter="addTask">
       <button class="add" :type="btnType" @click="addTask">добавить</button>
